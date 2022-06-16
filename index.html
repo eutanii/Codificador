@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="pt-br"/>
+        <title>Codificador</title>
+        <link href="index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1 class="titulo"> a</h1>
+        </header>
+         
+        <main>
+            <form>
+                <textarea class="Campo-De-Digitacao" id="a" placeholder="Digite seu texto" style="height: auto" rows="5" cols="40" ></textarea>
+                <div id="sinal-alerta-aviso"> 
+                    <p id="sinal-alerta">!</p>
+                    <p>Apenas letras minúsculas e sem acento</p>
+                </div>
+
+                <div  id="botoes"class="buttons">
+                    <button id="botao-Criptografar">Criptografar</button>
+                    <button id="botao-Descriptografar">Descriptografar</button>
+                </div>
+            </form>
+
+            <div class="retangulo-branco">
+                <div class="invisivel" id="txtarea-botao">
+                    <textarea class="Campo-De-Digitacao2" id="b"rows="7" cols="23" > </textarea>
+                    <button onclick="copiadorDeTexto()" id="botao-Copiar">Copiar</button>
+                </div>
+
+                <div class="img-txt" id="img-txt">
+                    <img class="imagem-menino" id="imagem-id-menino" src="High quality products 1 3.jpg">
+                    <h2 id="Mensagem-da-caixa">Nenhuma mensagem encontrada!</h2>
+                    <p>Digite um texto que você deseja <br>criptografar ou descriptografar</p>
+                </div>
+            </div>
+        </main>
+
+         <footer>
+                <p>Copyright &copy; Codificador - 2022</p>
+                <p>By: @eutanii</p>
+         </footer>
+
+         <script src="index.js"></script>
+    </body>
+</html>
